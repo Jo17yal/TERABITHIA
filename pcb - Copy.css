@@ -23,8 +23,3 @@ body, html {
     margin-bottom: 10px;
 }
 
-
-#constellationInfo p, #latitude, #longitude {
-    font-size: 14px;
-    margin: 5px 0;
-}
