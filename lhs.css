@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.canvas-container {
+    flex: 1;
+    background-color: black;
+}
+
+.info-panel {
+    width: 300px;
+    background-color: rgba(30, 30, 30, 0.9);
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.info-panel h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+#constellationInfo p, #latitude, #longitude {
+    font-size: 14px;
+    margin: 5px 0;
+}

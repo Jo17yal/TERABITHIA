@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    background: #000; /* Dark background to represent space */
+}
+
+h1 {
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px; /* Wider toolbar for dropdown */
+    background-color: rgba(32, 32, 32, 0.9);
+    border-radius: 8px; /* Rounded corners for toolbar */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Subtle shadow */
+}
+
+#toolbar * {
+    margin-bottom: 10px; /* Spacing between elements */
+}
+
+#toolbar label {
+    font-size: 14px;
+}
+
+#toolbar input,
+#toolbar select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px; /* Rounded corners for inputs and select */
+    border: 1px solid #ccc; /* Light border */
+    background-color: #555; /* Darker background for inputs */
+    color: white; /* White text for inputs */
+}
+
+#toolbar button {
+    background-color: #1565c0; /* Blue button background */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    color: white; /* White text for buttons */
+    padding: 10px; /* Padding for buttons */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#toolbar button:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+}
+
+.drawing-board {
+    position: relative;
+    flex: 1; /* Allow drawing board to take remaining space */
+    border: 1px solid #ccc; /* Light border around the canvas */
+}
+
+#drawing-board {
+    width: 100%;
+    height: 100%;
+    border: none; /* No border for the canvas */
+    cursor: crosshair; /* Crosshair cursor for drawing */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent for effect */
+}
+
+/* Optional: Add starry background effect */
+.drawing-board::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none; /* Ensure stars do not interfere with drawing */
+}

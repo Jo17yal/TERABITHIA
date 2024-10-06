@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terabithia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #f9f9f9;
+        }
+
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f9f9f9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #00d4ff;
+        }
+
+        .main-banner {
+            background-image: url('bggg.jpg'); /* Replace with a real image */
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-banner h2 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 10px #000;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .explore-section {
+            background-color: #111;
+            padding: 50px;
+        }
+
+        .explore-section h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .explore-section p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .explore-section .btn {
+            background-color: #00d4ff;
+            padding: 10px 20px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 5px; /* Margin to space the buttons */
+        }
+
+        .articles-section {
+            background-color: #1a1a1a;
+            padding: 50px;
+        }
+
+        .articles-section h3 {
+            font-size: 2rem;
+            color: #00d4ff;
+            margin-bottom: 20px;
+        }
+
+        .article {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+        }
+
+        .article h4 {
+            margin-top: 0;
+            font-size: 1.5rem;
+            color: #00d4ff;
+        }
+
+        .article p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #f1f1f1;
+        }
+
+        .article a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Terabithia</h1>
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="#explore">Explore</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="main-banner" id="home">
+        <h2>Discover the Universe</h2>
+    </section>
+
+    <section id="explore" class="explore-section">
+        <h3>Explore the Cosmos</h3>
+        <p>Venture beyond Earth, explore the planets, and delve into the mysteries of the galaxy. Become a space explorer and unravel the wonders of the universe!</p>
+        <a href="login.html" class="btn">Start Your Journey</a>
+        <a href="starmap.html" class="btn">Star Map</a> <!-- Add Star Map Button -->
+        <a href="weather.html" class="btn">Weather Status</a> <!-- Add Weather Forecast Button -->
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section">
+        <h3>Latest Space Articles</h3>
+
+        <div class="article">
+            <h4>Exoplanet Discovery: A New World Awaits</h4>
+            <p>Astronomers have discovered a new exoplanet in the habitable zone of a distant star, sparking excitement about the possibility of life beyond Earth. Learn more about this groundbreaking discovery and its implications.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="article">
+            <h4>The Secrets of Dark Matter</h4>
+            <p>Dark matter makes up a significant portion of the universe, but we still don't know exactly what it is. Explore the latest theories and research on one of the greatest mysteries in modern astrophysics.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="article">
+            <h4>NASA's Artemis Mission: Returning to the Moon</h4>
+            <p>NASA is preparing to send humans back to the moon with the Artemis mission. Discover how this mission will pave the way for future exploration of Mars and beyond.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Space Explorer. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

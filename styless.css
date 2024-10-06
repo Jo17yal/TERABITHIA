@@ -1,0 +1,66 @@
+/* General body and scene settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+/* Star container */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Star properties */
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    animation: twinkle 2s infinite ease-in-out;
+}
+
+/* Constellation lines */
+.constellation-line {
+    position: absolute;
+    background-color: white;
+    height: 1px;
+    z-index: 1;
+}
+
+/* Exoplanets clickable points */
+.exoplanet {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}

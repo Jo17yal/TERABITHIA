@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terabithia - Interactive Night Sky</title>
+    <link rel="stylesheet" href="kepler.css">
+</head>
+<body>
+    <div class="canvas-container">
+        <canvas id="earthCanvas"></canvas>
+    </div>
+    
+    <div class="info-panel">
+        <h2>Constellations</h2>
+        <div id="constellationInfo">
+            <p>Click on a star or constellation for more info.</p>
+        </div>
+        <h2>Location Data</h2>
+        <p>Latitude: <span id="latitude">--</span></p>
+        <p>Longitude: <span id="longitude">--</span></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="earthScriptsk.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kepler.css">
+    <title>Exoplanet Search</title>
+</head>
+<body>
+    <canvas id="earthCanvas"></canvas>
+    <div id="controls">
+        <div>
+            <label for="exoplanetSelect">Search Exoplanet:</label>
+            <select id="exoplanetSelect">
+                <option value="" disabled selected>Select an exoplanet</option>
+                <!-- Options will be populated dynamically by JavaScript -->
+            </select>
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="constellationInfo"></div>
+        <div>Latitude: <span id="latitude"></span></div>
+        <div>Longitude: <span id="longitude"></span></div>
+        <div>Altitude: <span id="altitude"></span></div>
+    </div>
+    <script src="earthScriptsk.js"></script>
+</body>
+</html>

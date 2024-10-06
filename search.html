@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet Explorer - Terabithia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for the draw button */
+        .draw-button {
+            position: fixed; /* Fixed position to stay at the top right */
+            top: 20px;  /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            padding: 15px 30px; /* Increased padding for a larger button */
+            font-size: 1.2rem; /* Increased font size */
+            background-color: #00d4ff; /* Button background color */
+            color: #000; /* Text color */
+            border: none; /* No border */
+            border-radius: 8px; /* Slightly larger border radius */
+            cursor: pointer; /* Cursor changes to pointer on hover */
+            text-decoration: none; /* Remove underline for link */
+            display: inline-block; /* Make link look like a button */
+            z-index: 1000; /* Ensure it appears above other elements */
+        }
+
+        /* Style for the main container */
+        .container {
+            padding: 20px; /* Adds some padding around the content */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Explore the Exoplanets</h1>
+
+        <!-- Draw button -->
+        <a href="draw.html" class="draw-button">Draw and Name your own Constellation</a>
+        
+        <!-- Dropdown for exoplanets -->
+        <div class="dropdown">
+            <select id="exoplanetDropdown" onchange="showExoplanetInfo()">
+                <option value="" disabled selected>Select an Exoplanet</option>
+                <option value="Proxima Centauri b">Proxima Centauri b</option>
+                <option value="TRAPPIST-1e">TRAPPIST-1e</option>
+                <option value="Kepler-452b">Kepler-452b</option>
+                <option value="HD 209458 b (Osiris)">HD 209458 b (Osiris)</option>
+                <option value="55 Cancri e">55 Cancri e</option>
+                <option value="WASP-12b">WASP-12b</option>
+                <option value="Gliese 581d">Gliese 581d</option>
+                <option value="Kepler-22b">Kepler-22b</option>
+                <option value="TOI 700 d">TOI 700 d</option>
+            </select>
+        </div>
+        
+        <!-- Space for displaying exoplanet info -->
+        <div id="exoplanetInfo"></div>
+        <div class="view-3d">
+            <button id="view3DButton" onclick="viewExoplanet3D()" disabled>View in 3D</button>
+        </div>
+    </div>
+    
+    <!-- Ensure JavaScript is properly linked -->
+    <script src="search.js"></script>
+</body>
+</html>

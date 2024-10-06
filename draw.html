@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="draw.css">
+    <title>Draw Constellations</title>
+</head>
+<body>
+    <section class="container">
+        <div id="toolbar">
+            <h1>Draw Constellations</h1>
+            <label for="exoplanet-select">Select Exoplanet:</label>
+            <select id="exoplanet-select">
+                <option value="default">--Choose an Exoplanet--</option>
+                <option value="proximaCentauri">Proxima Centauri b</option>
+                <option value="kepler186f">Kepler-452b</option>
+                <option value="trappist1e">TRAPPIST-1e</option>
+            </select>
+            <label for="stroke">Stroke Color</label>
+            <input id="stokr" name="stroke" type="color">
+            <label for="lineWidth">Line Width</label>
+            <input id="lineWidth" name="lineWidth" type="number" value="5">
+            <button id="clear">Clear</button>
+            <h1>Name your Constellation!</h1>
+            <label for="constellation-name">Enter name</label>
+            <input type="text" id="constellation-name" placeholder="Enter constellation name">
+            <button id="save">Save</button>
+            <ul id="constellation-list"></ul> <!-- List for displaying saved names -->
+        </div>
+        <div class="drawing-board">
+            <canvas id="drawing-board"></canvas>
+        </div>
+        
+        
+    </section>
+    <script src="draw.js"></script>
+</body>
+</html>
