@@ -5,98 +5,85 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background: url('pic2.jpg') no-repeat center center fixed;
+    background: url('ss.jpeg') no-repeat center center fixed;
     background-size: cover;
+    font-family: 'Arial', sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(231, 235, 230);
 }
 
 .container {
     text-align: center;
-    position: relative;
-}
-
-header {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
-}
-
-header h1 {
-    font-size: 48px;
-    color: white;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #8a2be2;
-}
-
-main .hero {
     background: rgba(0, 0, 0, 0.6);
     padding: 40px;
     border-radius: 10px;
-    color: white;
-    width: 80%;
-    margin: 0 auto;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    margin: auto;
 }
 
-main .hero h2 {
-    font-size: 36px;
+h1 {
     margin-bottom: 20px;
-    color: #f0f0f0;
+    font-size: 36px;
 }
 
-main .hero p {
-    font-size: 20px;
-    margin-bottom: 30px;
+.dropdown {
+    margin-bottom: 20px;
 }
 
-.cta-btn {
-    background-color: #8a2be2;
-    padding: 15px 30px;
+.dropdown label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown select {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dropdown select option {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#exoplanetInfo {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Button styles */
+button {
+    padding: 12px 20px;
+    background-color: rgba(0, 128, 255, 0.7); /* Semi-transparent blue */
     border: none;
     border-radius: 5px;
+    color: white;
     font-size: 18px;
-    text-decoration: none;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%; /* Full width for consistency */
 }
 
-.cta-btn:hover {
-    background-color: #5d20a1;
+button:hover {
+    background-color: rgba(0, 128, 255, 1); /* Solid blue on hover */
 }
 
-/* Mobile responsiveness */
-@media screen and (max-width: 768px) {
-    .hero {
-        width: 95%;
-    }
-
-    header h1 {
-        font-size: 36px;
-    }
+button:active {
+    transform: scale(0.98); /* Slight shrink effect on click */
 }
